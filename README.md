@@ -1,4 +1,6 @@
 # power_analysis_xgboost
+
+# Description
 The calculate_sample_size function is a Python function that takes in several inputs and returns the total sample size needed to achieve a desired level of accuracy. The inputs to the function include:
 
 - alpha: The significance level for the hypothesis test, typically set to 0.05.
