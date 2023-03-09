@@ -10,13 +10,13 @@ The calculate_sample_size function is a Python function that takes in several in
 
 The function first calculates the Z-values for the desired significance level and power using the cumulative distribution function (CDF) of the standard normal distribution. These values are then used to calculate the required sample size for a single predictor variable using the formula:
 
-                                          ### n_base = (z_alpha + z_power)^2 / effect_size^2
+                                           n_base = (z_alpha + z_power)^2 / effect_size^2
                                           
 where z_alpha and z_power are the Z-values for the desired significance level and power, respectively. This formula is based on the standard formula for calculating sample size for a two-sample t-test.
 
 The function then adjusts the sample size for the number of binary, categorical and continuous predictors using the formula:
 
-                                         ### n_adjusted = n_base / (n_binary + n_cat + n_cont + 1)
+                                          n_adjusted = n_base / (n_binary + n_cat + n_cont + 1)
                                          
 where n_binary, n_cat and n_cont are the number of binary, categorical and continuous predictors in the model, respectively. This formula takes into account the fact that more predictors in the model can increase the required sample size.
 
