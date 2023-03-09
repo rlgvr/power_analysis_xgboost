@@ -23,5 +23,14 @@ where n_binary, n_cat and n_cont are the number of binary, categorical and conti
 Finally, the adjusted sample size is rounded up to the nearest integer using the ceil function and returned as the output of the function.
 
 The code also includes an example of how to use the calculate_sample_size function. The example sets the alpha and power values to 0.05 and 0.8, respectively, and estimates the effect size based on previous studies. The number of binary, categorical and continuous predictors in the model are set to 10, 4 and 0, respectively. The effect size is then adjusted for the number of variables using Cohen's f-squared method, and the calculate_sample_size function is called to calculate the required sample size.                                         
-                                       
+                       
+                       
+#Limitations 
+The accuracy of the function provided in terms of predicting the number of observations required for a specific accuracy depends on several factors, such as the accuracy of the effect size estimate, the distributional assumptions of the data, and the accuracy of the statistical power estimate.
+
+The function uses a formula that is based on assumptions about the distribution of the data, the type of hypothesis test being conducted, and the desired levels of significance and power. If these assumptions hold and the effect size estimate is accurate, then the function should provide a reasonable estimate of the required sample size for a given study.
+
+However, in practice, the assumptions may not always hold, and there may be other factors that affect the accuracy of the sample size estimate. For example, there may be unmeasured or unknown confounding factors that affect the variability of the data or the magnitude of the effect size. Additionally, the function assumes that the predictors are independent, which may not always be the case in practice.
+
+Therefore, while the function can provide a useful estimate of the required sample size, it is important to interpret the results with caution and to consider the limitations and assumptions of the function and the underlying statistical methods. It is also important to conduct sensitivity analyses and to evaluate the robustness of the results to different assumptions and scenarios.
                                          
